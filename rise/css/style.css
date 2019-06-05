@@ -1,0 +1,25 @@
+.news_container {
+	width: 100%;
+}
+
+.center {
+	margin-left: 200px;
+	margin-right: 700px;
+
+/* 	margin: 0px 100px 0px 100px; */
+/* 	margin : auto;
+	text-align: center; */
+}
+
+.news_content {
+	margin-bottom: 50px;
+}
+
+.news_content img {
+	width: 580px;
+	height: 380px;
+}
+
+span {
+	width: 200px;
+}
