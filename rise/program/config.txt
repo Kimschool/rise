@@ -1,0 +1,4 @@
+Host Test_Host
+	HostName kimschool.sakura.ne.jp
+	User kimschool
+	LocalForward 3307 mysql715.db.sakura.ne.jp:3306
