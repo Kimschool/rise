@@ -3,7 +3,7 @@
 
 <h1>RISE NEWS 登録画面</h1>
 
-<form action = "service/insert_news_service.php" enctype="multipart/form-data" onsubmit="return formcheck();">
+<form action = "service/insert_news_service.php" method="post" enctype="multipart/form-data" onsubmit="return formcheck();">
 	IMG:<br><input type="file" id ="img_file" name="img_file"><br>
 	TITLE :<br><input type="text" name="title"><br>
 	CONTENT:<br><textarea name="content" style="height: 500px; width: 500px;"></textarea><br>
