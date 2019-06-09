@@ -2,13 +2,14 @@
     /*  */
     function showdata($conn, $sql) {
         foreach ($conn->query($sql) as $value) {
-            echo "<div class='news_content center'>";
-            echo "<span>".$value['reg_date']."</span><br>";
-            echo "<span>".$value['title']."</span><br>";
-            echo "<img src='".$value['img_file']."'><br>";
-            echo $value['no']."<br>";
-            echo "<span>".modcontent($value['content'])."</span><br>";
-            echo "</div>";
+            echo "\t\t<div class='news_content center'>\r\n";
+            echo "\t\t\t<span>".$value['reg_date']."</span><br>\r\n";
+            echo "\t\t\t<span>".$value['title']."</span><br>\r\n";
+            echo "\t\t\t<a href='".$value['img_file']."'"."data-lightbox='".$value['img_file']."' data-title='".$value['title']."'>\r\n";
+            echo "\t\t\t\t<img src='".$value['img_file']."'><br>\r\n";
+            echo "\t\t\t</a>\r\n";
+            echo "\t\t\t<span>".modcontent($value['content'])."</span><br>\r\n";
+            echo "\t\t</div>\r\n";
         }
     }
 
